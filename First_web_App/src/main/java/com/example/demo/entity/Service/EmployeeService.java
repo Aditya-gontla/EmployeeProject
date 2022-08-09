@@ -1,14 +1,13 @@
 package com.example.demo.entity.Service;
 
-import java.util.List;
+import org.springframework.web.servlet.ModelAndView;
 
-import com.example.demo.entity.Emplyoee;
+import com.example.demo.entity.Employee;
 
 public interface EmployeeService {
-	List<Emplyoee> getEmployees();
-	void save(Emplyoee employee);
-	void deleteid(long id);
-	void update(Emplyoee employee);
+	ModelAndView getallEmployees();
+	ModelAndView deleteid(long id);
+    ModelAndView updateEmployee(Employee employee);
+	ModelAndView addEmployee(Employee employee);
 	
-
 }

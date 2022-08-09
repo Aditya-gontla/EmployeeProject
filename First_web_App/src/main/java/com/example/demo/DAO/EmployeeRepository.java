@@ -1,12 +1,10 @@
 package com.example.demo.DAO;
 
-import javax.persistence.Id;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.demo.entity.Emplyoee;
+import com.example.demo.entity.Employee;
 
-public interface EmployeeRepository extends JpaRepository<Emplyoee ,Long>
+public interface EmployeeRepository extends JpaRepository<Employee ,Long>
 {
 
 
